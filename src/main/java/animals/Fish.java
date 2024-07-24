@@ -1,6 +1,6 @@
-package src.main.java;
+package src.main.java.animals;
 
-public class Fish extends Animal{
+public class Fish extends Animal {
 
     @Override
     void makeSound() {
