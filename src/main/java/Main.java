@@ -3,6 +3,7 @@ package src.main.java;
 import java.util.List;
 import src.main.java.animals.*;
 import src.main.java.environment.Environment;
+import src.main.java.environment.Road;
 import src.main.java.environment.Sky;
 import src.main.java.environment.Water;
 import src.main.java.vehicles.*;
@@ -37,6 +38,23 @@ public class Main {
 //********************************************************************
         System.out.println("*******************  Task 15  *********************");
 
+//        Sky sky = new Sky();
+//        sky.addTraffic(new Duck());
+//        sky.addTraffic(new Pigeon());
+//        sky.addTraffic(new Aeroplane());
+//
+//        Water water = new Water();
+//        water.addTraffic(new Duck());
+//        water.addTraffic(new Fish());
+//
+//        List<Environment<?>> environments = List.of(sky, water);
+//
+//        for (Environment<?> environment: environments) {
+//            environment.checkTraffic();
+//        }
+        System.out.println("*******************  Task 16  *********************");
+
+
         Sky sky = new Sky();
         sky.addTraffic(new Duck());
         sky.addTraffic(new Pigeon());
@@ -46,11 +64,17 @@ public class Main {
         water.addTraffic(new Duck());
         water.addTraffic(new Fish());
 
-        List<Environment<?>> environments = List.of(sky, water);
+        Road road = new Road();
+        road.addTraffic(new Car());
+        road.addTraffic(new Van());
+        road.addTraffic(new Lorry());
+
+        List<Environment<?>> environments = List.of(sky, water, road);
 
         for (Environment<?> environment: environments) {
             environment.checkTraffic();
         }
+
 
 
     }
