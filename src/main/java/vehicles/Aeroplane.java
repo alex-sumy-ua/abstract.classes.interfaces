@@ -9,7 +9,7 @@ public class Aeroplane extends Vehicle implements Flyable {
     }
 
     @Override
-    void move() {
+    public void move() {
         fly();
     }
 }

@@ -2,7 +2,7 @@ package src.main.java.vehicles;
 
 public class Car extends Vehicle {
     @Override
-    void move() {
+    public void move() {
         System.out.println("Car is driving.");
     }
 }
